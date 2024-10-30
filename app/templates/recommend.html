@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Music Recommendations</title>
+</head>
+
+<body>
+    <h1>Your Mood: {{ mood }}</h1>
+    <h2>Recommended Songs:</h2>
+    <ul>
+        {% for song in recommendations %}
+        <li>{{ song }}</li>
+        {% endfor %}
+    </ul>
+    <a href="/">Upload another song</a>
+</body>
+
+</html>
